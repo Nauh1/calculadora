@@ -1,19 +1,68 @@
-.display-class{
-    color: black;
-    width: 300px;
-    height: 50px;
-    border: 4px solid rgb(0, 0, 0);
+body {
+    background-color: #121212;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-.botoes button{
-    color: gray;
-    border: 4px solid gray;
-    width: 150px;
+.display-class {
+    background-color: #1F1B24;
+    color: #EDEDED;
+    width: 500px;
+    height: 80px;
+    border: 2px solid #6A0DAD;
+    margin-top: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    font-size: 30px;
+    box-shadow: 0 0 20px #6A0DAD66;
+}
+
+.botoes button {
+    color: #FFFFFF;
+    border: none;
+    width: 110px;
     height: 75px;
-    font-size: 35px;
+    font-size: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.box-central{
+.botoes button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.botoes .num {
+    background-color: #6A0DAD;
+}
+.botoes .op {
+    background-color: #4a2064;
+}
+
+.botoes #apagarUm, #apagarTudo {
+    background-color: #d72679;
+}
+
+.botoes #calcular {
+    background-color: #01773c;
+    font-weight: bold;
+}
+
+.box-central {
     justify-content: center;
     display: flex;
+}
+
+.bottons-central {
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }

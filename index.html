@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    
-    <div class="box-central">
 
+<body>
+
+    <div class="box-central">
         <div class="display-class">
             <h1 id="display"></h1>
         </div>
-
-        <div class="botoes">
-            <button onclick="apagarUm()" class="operadores"><-</button>
-            <button onclick="adicinar()"class="operadores">(</button>
-            <button onclick="adicinar()"class="operadores">)</button>
-            <button onclick="apagarTudo()" class="operadores">c</button>
-            <br>
-            <button onclick="adicinar()">7</button>
-            <button onclick="adicinar()">8</button>
-            <button onclick="adicinar()">9</button>
-            <button onclick="adicinar()"class="operadores">/</button>
-            <br>
-            <button onclick="adicinar()">4</button>
-            <button onclick="adicinar()">5</button>
-            <button onclick="adicinar()">6</button>
-            <button onclick="adicinar()"class="operadores">*</button>
-            <br>
-            <button onclick="adicinar()">1</button>
-            <button onclick="adicinar()">2</button>
-            <button onclick="adicinar()">3</button>
-            <button onclick="adicinar()"class="operadores">-</button>
-            <br>
-            <button onclick="adicinar()">0</button>
-            <button onclick="adicinar()">.</button>
-            <button onclick="adicinar()"class="operadores">+</button>
-            <button onclick="calcular()"class="operadores">=</button>
-    
-        </div>
-    
     </div>
-    
+    <div class="bottons-central">
+        <div class="botoes">
+            <button id="apagarUm" class="operadores">&larr;</button>
+            <button class="op" data-valor="(">(</button>
+            <button class="op" data-valor=")">)</button>
+            <button id="apagarTudo" class="operadores">C</button>
+            <br>
+            <button class="num" data-valor="7">7</button>
+            <button class="num" data-valor="8">8</button>
+            <button class="num" data-valor="9">9</button>
+            <button class="op" data-valor="/">/</button>
+            <br>
+            <button class="num" data-valor="4">4</button>
+            <button class="num" data-valor="5">5</button>
+            <button class="num" data-valor="6">6</button>
+            <button class="op" data-valor="*">*</button>
+            <br>
+            <button class="num" data-valor="1">1</button>
+            <button class="num" data-valor="2">2</button>
+            <button class="num" data-valor="3">3</button>
+            <button class="op" data-valor="-">-</button>
+            <br>
+            <button class="num" data-valor="0">0</button>
+            <button class="op" data-valor=".">.</button>
+            <button class="op" data-valor="+">+</button>
+            <button id="calcular">=</button>
+        </div>
+    </div>
+
+    <script src="func.js"></script>
 </body>
+
 </html>
